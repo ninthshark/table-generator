@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Table Generator</h1>
+      <p>
+        How many column in your table :
+        <input type="number" name="no-column" min="1" id="number" />
+        <input type="submit" name="submit" value="submit" class="submit" />
+      </p>
+      <div class="merge-button">
+        <button id="merge">Merge Across</button>
+        <button id="merge-column">Merge Down</button>
+      </div>
+      <div class="table-area"></div>
+      <div class="add-preview"></div>
+      <p>Cells are contenteditable</p>
+      <div class="html-area">
+        <textarea cols="30" rows="10" class="html-viewer"><pre></pre></textarea>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
